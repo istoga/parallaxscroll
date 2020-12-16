@@ -1,10 +1,118 @@
+/* Animation Heading */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    width: 60%;
+    margin: 0 auto;
+    z-index: -1;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    transform: translate(0, -50%);
+}
+
+.content h1 {
+    font-size: 54px;
+    color: #101010;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.content p {
+    margin-top: 0;
+    text-align: left;
+    color: #101010;
+}
+
+.overlay-2 {
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #48A9A6;
+}
+
+.overlay {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #101010;
+}
+
+.overlay p {
+    font-size: 300px;
+    font-weight: 800;
+}
+
+.screen {
+    color: #323232;
+    font-family: Poppins;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.myBtn {
+    font-family: Poppins;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    display: block;
+    padding: 24px 48px;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 6px;
+    color: #fff;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    outline: none;
+    overflow: hidden;
+    background: none;
+    z-index: 1;
+    cursor: crosshair;
+    transition: 0.8s ease-out;
+}
+
+.myBtn:hover {
+    color: #101010;
+    cursor: crosshair;
+}
+
+.myBtn:before {
+    content: "";
+    position: absolute;
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    transition: top 0.8s ease-out;
+}
+
+.myBtn:hover:before {
+    top: 0;
+}
+
 /******Styling From Traversy Tutorial*******/
 body, html {
     height: 100%;
     margin: 0;
     font-size: 16px;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
     line-height: 1.8em;
     color: #666;
 }
@@ -16,32 +124,49 @@ body, html {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    height: 90vh;
 }
 
 
 /*****fixed = parallax
      scroll = normal******/
 
+.quotedTitle {
+    animation: linear 15s rotate infinite;
+    animation-duration: ;
+}
 
+@keyframes rotate
+  from
+    transform: rotateZ(0deg)
+  to
+    transform: rotateZ(360deg)
 
+p {
+    /* text-align: center; */
+    height: 75vh;
+    margin: 0 auto;
+    width: 50%;
+    
+}
 
 .pimg1 {
-    background-image: url(./img/pexels-stanislav-kondratiev-3708607.jpg);
+    background-image: url(./img/sky1.jpg);
     min-height: 100%;
 }
 
 .pimg2 {
-    background-image: url(./img/pexels-luiz-fernando-3021601.jpg);
+    background-image: url(./img/sky2.jpg);
     min-height: 400px;
 }
 
 .pimg3 {
-    background-image: url(./img/pexels-christina-morillo-1181742\ \(3\).jpg);
+    background-image: url(./img/sky3.jpg);
     min-height: 400px;
 }
 
 .pimg4 {
-    background-image: url(./img/pexels-tatiana-syrikova-3932699.jpg);
+    background-image: url(./img/sky4.jpg);
     min-height: 400px;
 }
 
@@ -79,6 +204,17 @@ body, html {
 
 .ptext .border.trans {
     background-color: transparent;
+}
+
+.quotedTitle {
+
+ 
+}
+
+footer {
+    text-align: center;
+    padding-top:30px;
+    padding-bottom: 30px;
 }
 
 /******Styling from Codegrid
