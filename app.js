@@ -27,7 +27,7 @@ function fadeOut() {
         ease: Expo.easeInOut
     });
 
-    TweenMax.from
+    
 }
 // continue at https://www.youtube.com/watch?v=2WXo5AXjbn4
 
